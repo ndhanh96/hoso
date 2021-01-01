@@ -38,23 +38,77 @@ body {
   list-style-type: none;
   position: absolute;
   top: 8%;
-  right: 10%;
-  font-family: 'Quicksand', sans-serif;
+  right: 5%;
+  
 }
 
 .menuNavBar > li {
   float:left;
+}
+
+li > input {
+  color: black;
+  background: none;
+  text-transform: uppercase;
   margin-top: 10px;
   margin-bottom: 10px;
-  margin-left: 30px;
-  background-color: #F5C257;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  margin-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   padding-left: 20px;
   padding-right: 20px;
   border-radius: 20px;
+  border: none;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
 }
 
-li > a {
-  color: black;
+input[type="button"] {
+  outline: none;
+}
+
+input:active, input:hover {
+  background-color:rgba(245, 194, 87, 0.5);
+}
+
+
+
+.contentBox {
+  position: relative;
+  width: 360px;
+  left: 5%;
+  top: 30px;
+}
+
+.contentBox > p{
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+  margin-top: 20px;
+  text-align: justify;
+}
+
+.contentBox > h1{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 32px;
+  margin-bottom: 10%;
+}
+
+.imgAvatarBox {
+  position: absolute;
+  background-color: rgb(228, 191, 87);
+  width: 400px;
+  height: 400px;
+  border-radius: 200px;
+  top: 23%;
+  left: 51%;
+}
+
+.imgAvatarBox > img {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  right: 50%;
+  top: 50%;
+  transform: translate(50%,-50%);
+  /* background-color: rgb(237, 188, 85, 0.4); */
 }

@@ -19,17 +19,23 @@ class ContentBox extends React.Component {
 class HandleSwitchPage extends React.Component {
   constructor(props) {
     super(props);
+    this.handleClick = this.handleClick.bind(this);
   }
 
   handleClick(e) {
-    alert(e.target.type);
-    this.props.info(e.target.type);
+    // alert(this.props.page);
+    switch (this.props.page) {
+      case 'home':
+        e.target.value = 'Home';
+        break;
+    }
+    this.props.info(e.target.value);
   }
 
   render() {
     return (
       // <li><input type="button" value={this.props.name} onClick={(e) => this.handleClick(e)} /></li>
-      <li><input type="button" value={this.props.name} onClick={(e) => this.handleClick(e)} /></li>
+      <li><input type="button" value={this.props.page} onClick={this.handleClick} /></li>
     );
   }
 }
@@ -37,15 +43,16 @@ class HandleSwitchPage extends React.Component {
 class HomePage extends React.Component {
   constructor(props) {
     super(props);
+    this.handleChange = this.handleChange.bind(this);
     this.state = {
-      page: 'Aome',
+      page: 'home',
     }
   }
 
-  handleChange(type){
-    alert(type);
+  handleChange(value){
+    alert(value);
     this.setState({
-      page: type,
+      page: value,
     });
   }
 
@@ -55,7 +62,7 @@ class HomePage extends React.Component {
         <div id="navBar">
           <img id="logo" src="logo.png" alt="portfolio" />
           <ul className="menuNavBar">
-            <HandleSwitchPage name={this.state.page} info={() => this.handleChange()} />
+            <HandleSwitchPage page={this.state.page} info={this.handleChange} />
             <li><a href="">About</a></li>
             <li><a href="">Project</a></li>
             <li><a href="">Contact</a></li>

@@ -2,6 +2,10 @@
   margin: 0;
 }
 
+a, a:visited {
+  text-decoration: none;
+}
+
 body {
   margin: 0;
 }
@@ -21,8 +25,8 @@ body {
 .innerBox {
   position: absolute;
   background-color: #EFFAFD;
-  width: 800px;
-  height: 500px;
+  width: 900px;
+  height: 600px;
   box-shadow: 0 0 30px grey;
   border-radius: 60px;
   left: 50%;
@@ -35,9 +39,22 @@ body {
   position: absolute;
   top: 8%;
   right: 10%;
+  font-family: 'Quicksand', sans-serif;
 }
 
 .menuNavBar > li {
   float:left;
-  margin: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 30px;
+  background-color: #F5C257;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 20px;
+}
+
+li > a {
+  color: black;
 }

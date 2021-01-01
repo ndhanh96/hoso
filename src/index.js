@@ -4,22 +4,70 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 
 
+class ContentBox extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {  }
+  }
+  render() { 
+    return (  
+      <div></div>
+    );
+  }
+}
+
+class HandleSwitchPage extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+
+  handleClick(e) {
+    alert(e.target.type);
+    this.props.info(e.target.type);
+  }
+
+  render() {
+    return (
+      // <li><input type="button" value={this.props.name} onClick={(e) => this.handleClick(e)} /></li>
+      <li><input type="button" value={this.props.name} onClick={(e) => this.handleClick(e)} /></li>
+    );
+  }
+}
+ 
 class HomePage extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      page: 'Aome',
+    }
+  }
+
+  handleChange(type){
+    alert(type);
+    this.setState({
+      page: type,
+    });
+  }
+
   render() {
     return (
       <div className="innerBox">
         <div id="navBar">
           <img id="logo" src="logo.png" alt="portfolio" />
           <ul className="menuNavBar">
-            <li>Home</li>
-            <li>About</li>
-            <li>Project</li>
-            <li>Contact</li>
+            <HandleSwitchPage name={this.state.page} info={() => this.handleChange()} />
+            <li><a href="">About</a></li>
+            <li><a href="">Project</a></li>
+            <li><a href="">Contact</a></li>
           </ul>
+        </div>
+        <div className="contentBox">
+          <ContentBox switchpage={this.state.page} />
         </div>
       </div>
     );
   }
+
 }
 
 

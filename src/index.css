@@ -19,7 +19,7 @@ body {
   width: 150px;
   height: 150px;
   /* top: 10px; */
-  left: 2%;
+  left: 4.5%;
 }
 
 .innerBox {
@@ -37,7 +37,7 @@ body {
 .menuNavBar {
   list-style-type: none;
   position: absolute;
-  top: 8%;
+  top: 10%;
   right: 5%;
   
 }

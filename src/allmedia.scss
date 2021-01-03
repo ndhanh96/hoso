@@ -1,0 +1,265 @@
+@media (min-width: 2560px) {
+  .innerBox {
+    width: 900px * 2;
+    height: 600px * 2;
+  }
+  #logo {
+    width: 150px * 2;
+    height: 150px * 2;
+  }
+
+  .contentBox {
+    width: 360px * 2;
+  }
+
+  .contentByHeader {
+    > p {
+      font-size: 15px * 2;
+    }
+
+    a {
+      font-size: 18px * 2;
+    }
+  }
+
+  .contentBox > {
+    h1 {
+      font-size: 32px * 2;
+    }
+  }
+
+  .imgAvatarBox {
+    width: 400px * 2;
+    height: 400px * 2;
+    border-radius: 200px * 2;
+  }
+
+  #myAvatarImage {
+    width: 400px;
+    height: 400px;
+  }
+
+  .imgAvatarBox > {
+    img {
+      width: 250px * 2;
+      height: 250px * 2;
+    }
+  }
+  .menuNavBar {
+    li {
+      button {
+        font-size: 30px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .innerBox {
+    width: 500px;
+    height: 700px;
+    border-radius: 30px;
+  }
+
+  #logo {
+    left: 9%;
+    width: 100px;
+    height: 100px;
+  }
+
+  .contentBox {
+    position: absolute;
+    width: 400px;
+    top: 100%;
+    left: 50%;
+    padding-bottom: 40px;
+    transform: translate(-50%, -100%);
+  }
+  .contentBox > {
+    h1 {
+      font-size: 25px;
+    }
+  }
+
+  .imgAvatarBox {
+    width: 400px;
+    height: 200px;
+    border-radius: 0px;
+    top: 18%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 20px;
+  }
+
+  #myAvatarImage {
+    width: 150px;
+    height: 150px;
+    border-radius: 0;
+  }
+
+  .imgAvatarBox > {
+    img {
+      width: 200px;
+      height: 200px;
+    }
+  }
+
+  .menuNavBar {
+    top: 8%;
+    right: 10%;
+    li {
+      button {
+        float: left;
+        font-size: 13px;
+        margin-left: 10px;
+        width: 50px;
+      }
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .innerBox {
+    width: 380px;
+    height: 800px;
+    border-radius: 30px;
+  }
+
+  #logo {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    width: 80px;
+    height: 80px;
+    z-index: 1;
+  }
+
+  .menuNavBar {
+    top: 4%;
+    left: 10%;
+    padding: 0;
+    li {
+      button {
+        font-size: 12px;
+        // width: 50px;
+      }
+    }
+  }
+
+  .imgAvatarBox {
+    width: 380px;
+    height: 200px;
+    border-radius: 0px;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 20px;
+  }
+
+  #myAvatarImage {
+    width: 140px;
+    height: 140px;
+    border-radius: 0;
+    padding-bottom: 5px;
+  }
+
+  .imgAvatarBox > {
+    img {
+      width: 200px;
+      height: 200px;
+    }
+  }
+
+  .contentBox {
+    position: absolute;
+    width: 340px;
+    top: 95%;
+    left: 50%;
+    padding-bottom: 40px;
+    // transform: translate(-50%, -100%);
+  }
+  .contentBox > {
+    h1 {
+      font-size: 30px;
+    }
+  }
+
+  .contentByHeader > {
+    p {
+      font-family: "Raleway", sans-serif;
+      font-size: 18px;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+    .innerBox {
+      width: 310px;
+      height: 800px;
+      border-radius: 25px;
+    }
+  
+    #logo {
+      position: absolute;
+      top: 10%;
+      left: 5%;
+      width: 80px;
+      height: 80px;
+      z-index: 1;
+    }
+  
+    .menuNavBar {
+      top: 4%;
+      left: 1%;
+      padding: 0;
+      li {
+        button {
+          font-size: 12px;
+          // width: 50px;
+        }
+      }
+    }
+  
+    .imgAvatarBox {
+      width: 310px;
+      height: 200px;
+      border-radius: 0px;
+      top: 10%;
+      left: 50%;
+      transform: translateX(-50%);
+      margin-bottom: 20px;
+    }
+  
+    #myAvatarImage {
+      width: 140px;
+      height: 140px;
+      border-radius: 0;
+      padding-bottom: 5px;
+    }
+  
+    .imgAvatarBox > {
+      img {
+        width: 200px;
+        height: 200px;
+      }
+    }
+  
+    .contentBox {
+      position: absolute;
+      width: 280px;
+      top: 95%;
+    }
+    .contentBox > {
+      h1 {
+        font-size: 24px;
+      }
+    }
+  
+    .contentByHeader > {
+      p {
+        font-family: "Raleway", sans-serif;
+        font-size: 18px;
+      }
+    }
+  }
+  

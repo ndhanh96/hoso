@@ -1,3 +1,5 @@
+$transformToCenter: translate(50%, -50%);
+
 * {
   margin: 0;
 }
@@ -41,7 +43,7 @@ body {
   top: 30px;
 }
 
-.contentByHeader {
+.contentByHeader > {
   p {
     font-family: "Raleway", sans-serif;
     font-size: 15px;
@@ -59,7 +61,7 @@ body {
   }
 }
 
-.contentBox {
+.contentBox > {
   h1 {
     font-family: "Open Sans", sans-serif;
     font-size: 32px;
@@ -76,14 +78,14 @@ body {
   left: 51%;
 }
 
-.imgAvatarBox {
+.imgAvatarBox > {
   img {
     position: absolute;
     width: 250px;
     height: 250px;
     right: 50%;
     top: 50%;
-    transform: translate(50%, -50%);
+    transform: $transformToCenter;
   }
 }
 
@@ -91,9 +93,11 @@ body {
   position: absolute;
   right: 50%;
   top: 50%;
-  transform: translate(50%, -50%);
+  transform: $transformToCenter;
 }
 
 strong {
   margin-left: 200px;
 }
+
+
